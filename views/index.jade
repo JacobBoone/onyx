@@ -1,26 +1,30 @@
 extends layout
 
 block content
-	div.navbar.navbar-default.navbar-fixed-top.header-bar(role='navigation')
-		.container.site-title
-				.navbar-header
-				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-					span.sr-only Toggle navigation
-					span.icon-bar
-					span.icon-bar
-					span.icon-bar
+	.navbar-wrapper
+		.container
+			header.navbar.navbar-default.navbar-fixed-top.header-bar(role='navigation')
+				.container.site-title
+						.navbar-header
+						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+			
+							
+						ul.nav.navbar-nav
+							li.main-name
+								h1 Onyx
+								h3 Holistic Services
+					.navbar-collapse.collapse
+						ul.nav.navbar-nav.site-tabs
+							li
+								a.header-links(href='/') Home
+							li
+								a.header-links(href='/contact') Contact
+							li
+								a.header-links(href='/bradley') Services
+								// put a drop down list here under services
 	
-					
-				ul.nav.navbar-nav
-					li.main-name
-						h1 Onyx
-						h3 Holistic Services
-			.navbar-collapse.collapse
-				ul.nav.navbar-nav.site-tabs
-					li
-						a.header-links(href='/') Home
-					li
-						a.header-links(href='/contact') Contact
-					li
-						a.header-links(href='/bradley') Services
-						// put a drop down list here under services
+	.container.hero
