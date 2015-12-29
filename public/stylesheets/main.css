@@ -16,14 +16,6 @@ body{
 }
 
 
-.hero{
-	background: url("images/seedsofhealing.jpg") no-repeat center center fixed;
-	/*background-position: 50% 0px;*/
-	height: 500px;
-	margin-top: 130px;
-	min-width: 100%;
-}
-
 /*Navigation bar*/
 
 .site-title, .site-tabs{
@@ -35,7 +27,7 @@ body{
 	float: left;
 	min-width: 410px;
 	font-family: cursive;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .site-tabs{
 	padding-top: 60px;
@@ -48,6 +40,7 @@ body{
 
 .header-bar{
 	height: 130px;
+	/*opacity: 0.5;*/
 	/*z-index: 9999;*/
 }
 
@@ -61,6 +54,37 @@ body{
 
 }
 
+.navbar-default .navbar-nav>li>a{
+	color: #333;
+}
+
+.navbar-default .navbar-nav>li>a>h3{
+	margin-top: -4px;
+}
+
+.hero{
+	background: url("images/seedsofhealing.jpg") no-repeat center center fixed;
+	/*background-position: 50% 0px;*/
+	height: 500px;
+	margin-top: 130px;
+	min-width: 100%;
+}
+
+.information{
+	background-color: lightgrey;
+	height: 800px;
+	width: 100%;
+	margin-top: 400px;
+	position: absolute;
+	left: 0;
+}
+
+.image-circle{
+	/*background-image: url("..images/circle-img-3.png");*/
+	height: 100px;
+	width: 100px;
+	z-index: 1;
+}
 
 
 /*Contact Page*/

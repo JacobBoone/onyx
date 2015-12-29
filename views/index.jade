@@ -1,30 +1,42 @@
 extends layout
 
 block content
-	.navbar-wrapper
-		.container
-			header.navbar.navbar-default.navbar-fixed-top.header-bar(role='navigation')
-				.container.site-title
-						.navbar-header
-						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-			
-							
-						ul.nav.navbar-nav
-							li.main-name
-								h1 Onyx
-								h3 Holistic Services
-					.navbar-collapse.collapse
-						ul.nav.navbar-nav.site-tabs
-							li
-								a.header-links(href='/') Home
-							li
-								a.header-links(href='/contact') Contact
-							li
-								a.header-links(href='/bradley') Services
-								// put a drop down list here under services
-	
 	.container.hero
+		.navbar-wrapper
+			.container
+				header.navbar.navbar-default.navbar-fixed-top.header-bar(role='navigation')
+					.container.site-title
+							.navbar-header
+							button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+				
+								
+							ul.nav.navbar-nav
+								li.main-name
+									a(href='/')
+										h1 Onyx
+										h3 Holistic Services
+						.navbar-collapse.collapse
+							ul.nav.navbar-nav.site-tabs
+								li
+									a.header-links(href='/') Home
+								li
+									a.header-links(href='/contact') Contact
+								li
+									a.header-links(href='/bradley') Services
+									// put a drop down list here under services
+		
+		.container.information
+			.row
+				.col-lg-4
+					img.image-circle(src='http://www.chami.com/html-kit/i/g/cached/tmp10_dup_ed96748605915d9e208e9dc047b2d4a3.jpg')
+					h2 heading
+				.col-lg-4
+					img.image-circle(src='circle-img-4.png')
+					h2 heading
+				.col-lg-4
+					img.image-circle(src='.images/circle-img-3.png')
+					h2 heading
