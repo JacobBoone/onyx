@@ -9,38 +9,51 @@ body{
 	background-color: beige;
 }
 
+/*Navigation bar*/
+
 .site-title, .site-tabs{
 	display: inline-block;
+	
 }
+
 .site-title{
-	width: 50%;
+	width: 55%;
 	float: left;
 	min-width: 410px;
+	font-family: cursive;
+	margin-top: 20px;
 }
 .site-tabs{
-	padding-top: 9px;
+	padding-top: 60px;
+	font-family: Verdana;
 }
-.header-links{
-	color:white;
+
+.site-tabs li a{
+	padding-right: 70px;
+}
+
+.header-bar{
+	height: 130px;
+	z-index: 9999;
+}
+
+.main-name{
+	margin-left: 160px;
+}
+
+
+.main-name h3{
+	font-size: 15px;
+
 }
 
 
-.navbar-default{
-	/*background-image: url(http://4.bp.blogspot.com/-cQwworLGIDc/UViNgWO7vjI/AAAAAAAAAOs/PX-vVDFaQFM/s1600/3.jpg);*/
-	/*opacity: 0.9;*/
-	background-color: pink;
-}
 
-.title-bar, .submit-area{
-	margin-top: 60px;	
-	/*padding-top: 20px;*/
-}
+/*Contact Page*/
 
-.panel{
-	margin-top:80px;
-	width: 75%;
+.contact-panel{
+	margin-top: 80px;
 }
-
 .contact-button{
-	padding-top: 20px;
+	padding-top: 0px;
 }

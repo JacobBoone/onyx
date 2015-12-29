@@ -4,6 +4,9 @@ var indexController = {
 	},
 	contact: function(req, res) {
 		res.render('contact');
+	},
+	contactemail: function(req, res) {
+		res.render('contactemail');
 	}
 };
 

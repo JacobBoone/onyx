@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', indexController.index);
 app.get('/contact', indexController.contact);
+app.get('/contactemail', indexController.contactemail);
 
 var server = app.listen(8379, function() {
 	console.log('Express server listening on port ' + server.address().port);
