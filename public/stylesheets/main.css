@@ -70,7 +70,7 @@ body{
 	min-width: 100%;
 }
 
-.information{
+.service-information{
 	background-color: lightgrey;
 	height: 800px;
 	width: 100%;
@@ -79,13 +79,19 @@ body{
 	left: 0;
 }
 
-.image-circle{
+.service-icon{
 	/*background-image: url("..images/circle-img-3.png");*/
-	height: 100px;
-	width: 100px;
-	z-index: 1;
+	height: 225px;
+	width: 225px;
+	margin-top: 50px;
+	border-radius: 113px;
+	/*margin-right: 20px;*/
+	/*z-index: 1;*/
 }
 
+.jumbotron{
+	background-color: lightgrey;
+}
 
 /*Contact Page*/
 
