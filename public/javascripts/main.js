@@ -11,10 +11,10 @@ var ServiceItem = function(name, description, image){
 }
 
 // Declaring the images as objects
-var imgBirth = $('<img id="bradleybirth" class="service-icon col-xs-2">').attr('src', '../stylesheets/images/pregnantmom.jpg');
+var imgBirth = $('<img id="bradleybirth" class="service-icon col-xs-2">').attr('src', '../stylesheets/images/earthmom.jpg');
 var imgPsychk = $('<img id="psychk" class="service-icon col-xs-1">').attr('src', '../stylesheets/images/psychk.jpg');
 var imgOils = $('<img id="essentialoils" class="service-icon col-xs-2">').attr('src', '../stylesheets/images/essentialoils.jpg');
-var imgAbout = $('<img id="about" class="service-icon col-xs-1">').attr('src', '../stylesheets/images/circleimg4.png');
+var imgAbout = $('<img id="about" class="service-icon col-xs-1">').attr('src', '../stylesheets/images/aboutme.jpg');
 
 
 
