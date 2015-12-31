@@ -7,14 +7,31 @@ var ServiceItem = function(name, description, image){
 	this.name = name;
 	this.description = description;
 	this.image = image;
+	// this.title = title;
 
 }
 
+//Headings
+//with spans
+var hdBirth = $('<span id="bradleybirth-title" class="service-heading col-xs-2"></span>').text('Natural Birth');
+var hdPsychk = $('<span id="psychk-title" class="service-heading col-xs-2"></span>').text('Psych K');
+var hdOils = $('<span id="essentialoils-title" class="service-heading col-xs-2"></span>').text('Essential Oils');
+var hdAbout = $('<span id="about-title" class="service-heading col-xs-2"></span>').text('About Onyx');
+
+// var hdBirth = $('<p id="bradleybirth-title" class="service-heading col-xs-2"></p>').text('Natural Birth').append(imgBirth);
+// var hdPsychk = $('<p id="psychk-title" class="service-heading col-xs-2"></p>').text('Psych K').append(imgPsychk);
+// var hdOils = $('<p id="essentialoils-title" class="service-heading col-xs-2"></p>').text('Essential Oils').append(imgOils);
+// var hdAbout = $('<p id="about-title" class="service-heading col-xs-2"></p>').text('About Onyx').append(imgAbout);
+
+
 // Declaring the images as objects
-var imgBirth = $('<img id="bradleybirth" class="service-icon col-xs-2">').attr('src', '../stylesheets/images/earthmom.jpg');
-var imgPsychk = $('<img id="psychk" class="service-icon col-xs-1">').attr('src', '../stylesheets/images/psychk.jpg');
-var imgOils = $('<img id="essentialoils" class="service-icon col-xs-2">').attr('src', '../stylesheets/images/essentialoils.jpg');
-var imgAbout = $('<img id="about" class="service-icon col-xs-1">').attr('src', '../stylesheets/images/aboutme.jpg');
+var imgBirth = $('<img id="bradleybirth" class="service-icon col-xs-2 img-responsive img-circle">').attr('src', '../stylesheets/images/earthmom.jpg').append(hdBirth);
+var imgPsychk = $('<img id="psychk" class="service-icon col-xs-1 img-responsive img-circle">').attr('src', '../stylesheets/images/psychk.jpg').append(hdPsychk);
+var imgOils = $('<img id="essentialoils" class="service-icon col-xs-2 img-responsive img-circle">').attr('src', '../stylesheets/images/essentialoils.jpg').append(hdOils);
+var imgAbout = $('<img id="about" class="service-icon col-xs-1 img-responsive img-circle">').attr('src', '../stylesheets/images/aboutme.jpg').append(hdAbout);
+
+
+
 
 
 
@@ -24,6 +41,9 @@ var psych = new ServiceItem('psychk','this is my description psych k', imgPsychk
 var oils = new ServiceItem('essentialoils','this is my description for oils', imgOils);
 var aboutme = new ServiceItem('about','this is my description about me', imgAbout);
 
+// var psych = new ServiceItem('psychk','this is my description psych k', hdPsychk);
+// var oils = new ServiceItem('essentialoils','this is my description for oils', hdOils);
+// var aboutme = new ServiceItem('about','this is my description about me',  hdAbout);
 
 // Declare array of the services.
 var system = [birth, psych, oils, aboutme];
@@ -39,13 +59,39 @@ var putimagesonpage = function(arr){
 
 			
 		}
+
 		
 	}
+
 }
+
+
+
+// // //put titles on page
+// var puttitlesonpage = function(arr){
+// 	for (var i = 0; i < arr.length; i++) {
+// 		$('#titles').append(arr[i].title)
+// 		if(i !== arr.length-1){
+// 			$('#titles').append('<i class="icon-right-big col-xs-1"></i>')
+
+			
+// 		}
+		
+// 	}
+
+// }
+
+
+
+// var picsandtitles = function(){
+// 	$(putimagesonpage).append(puttitlesonpage)
+// }
 
 $(document).on('ready', function() {
 
 		putimagesonpage(system);
+		// puttitlesonpage(system);
+
 		$('#information').slideUp(800)
 		
 		$('.service-icon').click(function(){
@@ -67,11 +113,6 @@ $(document).on('ready', function() {
 				$('.desc-close').click(function(){
 					$('#information').slideUp(800).empty()
 				})
-
-// experiment to close more fluidly
-				// $('.desc-close').click(function(){
-				// 	$('#information').slideUp(600).empty()
-				// })
 
 			})
 			
