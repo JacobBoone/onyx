@@ -36,6 +36,8 @@ var putimagesonpage = function(arr){
 		$('#services').append(arr[i].image)
 		if(i !== arr.length-1){
 			$('#services').append('<i class="icon-right-big col-xs-1"></i>')
+
+			
 		}
 		
 	}
