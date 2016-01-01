@@ -7,7 +7,20 @@ var indexController = {
 	},
 	contactemail: function(req, res) {
 		res.render('contactemail');
+	},
+	birth: function(req, res) {
+		res.render('birth');
+	},
+	psychk: function(req, res) {
+		res.render('psychk');
+	},
+	essentialoils: function(req, res) {
+		res.render('essentialoils');
+	},
+	aboutme: function(req, res) {
+		res.render('aboutme');
 	}
+
 };
 
 module.exports = indexController;

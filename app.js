@@ -13,6 +13,12 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.index);
 app.get('/contact', indexController.contact);
 app.get('/contactemail', indexController.contactemail);
+app.get('/birth', indexController.birth);
+app.get('/psychk', indexController.psychk);
+app.get('/essentialoils', indexController.essentialoils);
+app.get('/aboutme', indexController.aboutme);
+
+
 
 var server = app.listen(8379, function() {
 	console.log('Express server listening on port ' + server.address().port);
