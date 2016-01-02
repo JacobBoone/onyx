@@ -25,9 +25,18 @@ block content
 									a.header-links(href='/') Home
 								li
 									a.header-links(href='/contact') Contact
-								li
-									a.header-links(href='/bradley') Services
-									// put a drop down list here under services
+								li.dropdown(role="presentation")
+									a.header-links.dropdown-toggle(data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Services
+										span.caret
+									ul.dropdown-menu
+										li
+											a(href='/birth') Natural Birth
+										li
+											a(href='/psychk') Psych K
+										li
+											a(href='/essentialoils') Essential Oils
+										li
+											a(href='/aboutme') About Me
 		
 		.container.service-information
 			.row

@@ -25,9 +25,18 @@ block content
 									a.header-links(href='/') Home
 								li
 									a.header-links(href='/contact') Contact
-								li
-									a.header-links(href='/bradley') Services
-									// put a drop down list here under services
+								li.dropdown(role="presentation")
+									a.header-links.dropdown-toggle(data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Services
+										span.caret
+									ul.dropdown-menu
+										li
+											a(href='/birth') Natural Birth
+										li
+											a(href='/psychk') Psych K
+										li
+											a(href='/essentialoils') Essential Oils
+										li
+											a(href='/aboutme') About Me
 		
 		.container.service-information
 			.row
@@ -46,7 +55,7 @@ block content
 			<hr class="featurette-divider">
 			.row.featurette.col-md-12
 				.col-md-9
-					h2.content-heading About Onyx
+					h2.content-heading About Brittany
 					p.content "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
 				.col-md-3
 					//- img.myphoto.img-responsive.center-block(src='../../stylesheets/images/aboutme.jpg')
