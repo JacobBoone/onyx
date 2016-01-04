@@ -78,73 +78,70 @@ body{
 .service-information{
 	background-color: lightgrey;
 	height: 800px;
-	/*min-height: 100%;*/
-	/*height: auto !important;*/
-	/*height: 100%*/
 	width: 100%;
 	margin-top: 345px;
 	position: absolute;
 	left: 0;
 	overflow: auto;
-	/*right: 0;*/
 }
 
+/*.services-row{
+	margin-left: -33px;
+}
+*/
 .service-icon{
 	height: 225px;
 	width: 225px;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	left:30px;
 	transition: all .8s ease-in-out;
 	padding-top: 20px;
 
 }
 
-.service-icon:hover{
+.service-title{
+	/*transition: none all .8s ease-in-out;*/
+	position:absolute;
+    top:50%;
+    width:89%;
+    height:10px;
+    font-family: cursive;
+    color:white;
+    font-size: 20px;
+    opacity: 1;
+    z-index: 1;
+}
+
+/*workingone trying to change*/
+/*.service-icon:hover{
+	transform: scale(1.3);
+	box-shadow: 0 50px 10px -10px rgba(0, 0, 0, 0.5);
+	opacity: 0.4;
+	display:inline;
+
+}*/
+.service-links:hover > .service-icon{
 	transform: scale(1.3);
 	box-shadow: 0 50px 10px -10px rgba(0, 0, 0, 0.5);
 	opacity: 0.4;
 	display:inline;
 
 }
+.service-links:hover > .service-title{
+
+	color: white;
+	z-index: 1;
+}
 
 .service-links{
 	height: 225px;
 	width: 225px;
-	/*margin-top: 50px;*/
+	margin-top: 40px;
 	margin-left: 75px;
 	left:30px;
 	text-align: center!important;
+	border-radius: 50%;
 }
-
-/*.service-heading{
-	display: inline-flex;
-	font-family: cursive;
-	padding-top: 10px;
-	height:10px;
-	z-index: 1;
-}*/
-
-
-
-/*.service-heading {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: none;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-
-}
-
-.service-heading:hover{
-	opacity: 1;
-}*/
 
 
 
@@ -175,9 +172,9 @@ body{
 	font-size: 23px;
 }
 
-.content-subhead{
+./*content-subhead{
 
-}
+}*/
 
 .myphoto{
 	height: 300px;
