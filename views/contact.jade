@@ -46,7 +46,7 @@ block content
 			.panel-heading
 				h3.panel-title Contact Me
 			.panel-body
-				form.form-horizontal
+				form.form-horizontal(action='/contactSubmission', name='contactus', id='contactus', method='post')
 					.form-group
 						label.col-sm-2.control-label(for='firstname') First Name
 						.col-sm-4
@@ -60,7 +60,12 @@ block content
 					.form-group
 						label.col-sm-2.control-label(for='inputEmail') Email
 						.col-sm-4
-							input#inputEmail.form-control(type='email', placeholder='Email',required )
+							input#inputEmail.form-control(type='email', placeholder='Email',required)
+
+					.form-group
+						label.col-sm-2.control-label(for='inputPhone') Phone Number
+						.col-sm-4
+							input#inputPhone.form-control(type='tel', placeholder='Phone Number',required)
 
 					.form-group
 						label.col-sm-2.control-label(for='serviceOptions') Reason for Inquiry

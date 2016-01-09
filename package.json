@@ -2,8 +2,11 @@
 	"dependencies": {
 		"express": "^4",
 		"jade": "^1",
-		"body-parser": "^1"
+		"body-parser": "^1",
+		"mongoose": "~4.3.4",
+		"nodemailer": "~1.11.0"
 	},
+
 	  "scripts": {
     "start": "node app.js"
   }
