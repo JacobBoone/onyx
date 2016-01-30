@@ -46,28 +46,28 @@ block content
 			.panel-heading
 				h3.panel-title Contact Me
 			.panel-body
-				form.form-horizontal(action='/contactSubmission', name='contactus', id='contactus', method='post')
+				form.form-horizontal(action='/contact', name='contactus', id='contactus', method='post')
 					.form-group
-						label.col-sm-2.control-label(for='firstname') First Name
+						label.col-sm-2.control-label(for='name') Name
 						.col-sm-4
-							input#inputfirstname.form-control(type='text', placeholder='First Name', required)
+							input.form-control(type='text', name='name', placeholder='Name', value='' id="name" required)
 
-					.form-group
+					//- .form-group
 						label.col-sm-2.control-label(for='lastname') Last Name
 						.col-sm-4
-							input#inputlastname.form-control(type='text', placeholder='Last Name', required)
+							input#inputLastname.form-control(type='text', placeholder='Last Name', required)
 
 					.form-group
-						label.col-sm-2.control-label(for='inputEmail') Email
+						label.col-sm-2.control-label(for='email') Email
 						.col-sm-4
-							input#inputEmail.form-control(type='email', placeholder='Email',required)
+							input.form-control(type='email', name='email' placeholder='Email', value='' id='email',required)
 
-					.form-group
-						label.col-sm-2.control-label(for='inputPhone') Phone Number
+					//- .form-group
+						label.col-sm-2.control-label(for='phone') Phone Number
 						.col-sm-4
-							input#inputPhone.form-control(type='tel', placeholder='Phone Number',required)
+							input.form-control(type='tel', name='phone', placeholder='Phone Number', id='phone',required)
 
-					.form-group
+					//- .form-group
 						label.col-sm-2.control-label(for='serviceOptions') Reason for Inquiry
 						.col-sm-4
 								select.form-control(type='text', required)
@@ -83,8 +83,18 @@ block content
 					.row
 						label.col-sm-2.control-label(for='message') Message
 						.col-sm-6
-							textarea.form-control(rows='8')
+							textarea.form-control(rows='8', name="message",id='message')
 
 					.form-group.contact-button
 						.col-sm-offset-2.col-sm-10
-							button.btn.btn-default(type='submit') Submit
+							button.btn.btn-default(name='submit', type='submit', value='Send', id='submit') Submit
+
+					if(typeof msg !== 'undefined')
+						if(!!err)
+							div(class='msgbox err') #{msg}
+						else
+							div(class='msgbox success') #{msg}
+
+
+
+

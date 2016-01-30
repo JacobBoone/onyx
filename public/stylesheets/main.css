@@ -42,10 +42,19 @@ body{
 	padding-right: 70px;
 }
 
-.header-bar{
-	height: 130px;
+
+/*.header-bar{*/
+	/*height: 130px;*/
 	/*opacity: 0.5;*/
 	/*z-index: 9999;*/
+/*}*/
+
+
+.anchor{
+  display: block;
+  height: 180px; /*same height as header*/
+  margin-top: -180px; /*same height as header*/
+  visibility: hidden;
 }
 
 .main-name{
