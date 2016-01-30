@@ -28,6 +28,6 @@ app.get('/aboutme', indexController.aboutme);
 
 
 
-var server = app.listen(8379, function() {
+var server = app.listen(process.env.PORT || 8379, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
