@@ -56,29 +56,52 @@ block content
 
 
 		.container.service-information
-			//- .row.services-row.hidden-xs
-				a.service-links.col-xs-4.circle(href='#birth')
-					.service-title
-						span Birth
-					img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/earthmom.jpg')
-				a.service-links.col-xs-4(href='#psychk')
-					.service-title
-						span PSYCH-K
-					img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/psychk.jpg')
-					
-				a.service-links.col-xs-4(href='#essentialoils')
-					.service-title
-						span Essential Oils
-					img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/essentialoils.jpg')
-					
-				//- a.service-links.col-xs-3(href='/aboutme')
-					.service-title
-						span About Me
-					img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/aboutme.jpg')
+			.row
+				.services-row.centered
+					a.service-links.service-links.col-xs-4.circle(href='#birth')
+						.service-title
+							span Birth
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/earthmom.jpg')
+					a.service-links.col-xs-4(href='#psychk')
+						.service-title
+							span PSYCH-K
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/psychk.jpg')
+					a.service-links.col-xs-4(href='#essentialoils')
+						.service-title
+							span Essential Oils
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/essentialoils.jpg')
+						
+					a.service-links.col-xs-3(href='/aboutme')
+						.service-title
+							span About Me
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/aboutme.jpg')
+
+			//- .row.visible-xs
+				.services-row.centered.visible-xs
+					a.service-links-small.service-links.col-xs-4.circle(href='#birth')
+						.service-title
+							span Birth
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/earthmom.jpg')
+					a.service-links-small.col-xs-4(href='#psychk')
+						.service-title
+							span PSYCH-K
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/psychk.jpg')
+					a.service-links-small.col-xs-4(href='#essentialoils')
+						.service-title
+							span Essential Oils
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/essentialoils.jpg')
+						
+					a.service-links-small.col-xs-3(href='/aboutme')
+						.service-title
+							span About Me
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/aboutme.jpg')
+
+
+
 					
 
 			.container.service-content.info.hidden-xs
-				//- <hr class="featurette-divider">
+				<hr class="featurette-divider">
 				.row.featurette.col-md-12
 					.col-md-12
 						h2.content.content-heading Onyx Holistic Services
@@ -144,7 +167,7 @@ block content
 
 			//- this is for small screens
 			.container.service-content.info.visible-xs
-				//- <hr class="featurette-divider">
+				<hr class="featurette-divider">
 				.row.featurette.col-md-12
 					.col-md-12
 						h2.content.content-heading Onyx Holistic Services

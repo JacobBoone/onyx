@@ -138,10 +138,11 @@ body{
 .oil-content{
 	padding-bottom: 100px;
 }
-/*.services-row{
+.services-row{
 	margin-left: -33px;
+	display: center;
 }
-*/
+
 .service-icon{
 	height: 225px;
 	width: 225px;
@@ -189,7 +190,17 @@ body{
 	height: 225px;
 	width: 225px;
 	margin-top: 40px;
-	margin-left: 150px;
+	margin-left: 82px;
+	left:30px;
+	text-align: center!important;
+	border-radius: 50%;
+}
+
+.service-links-small{
+	height: 225px;
+	width: 225px;
+	margin-top: 40px;
+	margin-left: 10px;
 	left:30px;
 	text-align: center!important;
 	border-radius: 50%;
