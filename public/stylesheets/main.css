@@ -57,8 +57,11 @@ body{
   visibility: hidden;
 }
 
+
 .main-name{
 	margin-left: 160px;
+	display: inline-block;
+	margin-right: 0px;
 }
 
 
@@ -93,6 +96,25 @@ body{
 	left: 0;
 	right: 0;
 
+}
+
+
+.inspiration{
+	font-size: 40px;
+	color: white;
+	font-family: cursive;
+	margin-top: 100px;
+	position: absolute;
+	/*margin-bottom: 5cm;*/
+}
+
+.inspiration-small{
+	font-size: 30px;
+	color: white;
+	font-family: cursive;
+	margin-top: 100px;
+	position: absolute;
+	/*margin-bottom: 5cm;*/
 }
 
 
@@ -214,6 +236,13 @@ body{
 
 .content-heading{
 	font-size: 23px;
+}
+
+
+.list-content{
+	list-style-position: inside;
+	list-style-type:disc;
+	margin-left: 20px;
 }
 
 ./*content-subhead{
