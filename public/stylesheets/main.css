@@ -105,7 +105,6 @@ body{
 	font-family: cursive;
 	margin-top: 100px;
 	position: absolute;
-	/*margin-bottom: 5cm;*/
 }
 
 .inspiration-small{
@@ -114,13 +113,11 @@ body{
 	font-family: cursive;
 	margin-top: 100px;
 	position: absolute;
-	/*margin-bottom: 5cm;*/
 }
 
 
 .service-information{
 	background-color: lightgrey;
-	/*height: 800px;*/
 	width: 100%;
 	margin-top: 345px;
 	position: absolute;
