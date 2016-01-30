@@ -19,7 +19,11 @@ var indexController = {
 	},
 	aboutme: function(req, res) {
 		res.render('aboutme');
-	}
+	},
+	test: function(req, res) {
+		res.render('test');
+	},
+	
 
 };
 
