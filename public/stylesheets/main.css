@@ -78,16 +78,28 @@ body{
 .navbar-default .navbar-nav>li>a>h3{
 	margin-top: -4px;
 }
-
-.hero{
+/*old background*/
+/*.hero{
 	background: url("images/seedsofhealing.jpg") no-repeat center center fixed;
-	/*background-position: 50% 0px;*/
 	height: 500px;
 	margin-top: 130px;
 	width: 100%;
 	left: 0;
 	right: 0;
 }
+*/
+
+
+
+/*change with Carosel*/
+.hero{
+	background-color: lightgrey;
+	width: 100%;
+
+}
+
+
+
 
 .hero-contact{	
 	background: url("images/rain.jpg")  no-repeat center center fixed;
@@ -98,8 +110,30 @@ body{
 	right: 0;
 
 }
+/*Carousel markup-------       BEGIN          -------------------*/
+.carousel{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 131px;
+}
+
+.first-slide{
+	/*position: relative;*/
+    /*width: 100%;*/
+    /*height: 400px;*/
+
+}
+
+.item{
+	position: relative;
+    width: 100%;
+    height: 400px;
+    /*margin-top: 131px;*/
+}
 
 
+/*Carousel markup -----------------     - - - - END ---------------------------------------*/
 .inspiration{
 	font-size: 40px;
 	color: gainsboro;
@@ -120,7 +154,7 @@ body{
 .service-information{
 	background-color: lightgrey;
 	width: 100%;
-	margin-top: 345px;
+	/*margin-top: 80px;*/
 	position: absolute;
 	left: 0;
 	overflow: auto;
@@ -129,7 +163,7 @@ body{
 
 .info{
 	margin-top: 46px;
-	/*background-color: lightgrey;*/
+	/*background-color: lightgrey;
 	/*position: absolute;*/
 	/*left: 0;
 	width: 100%;*/

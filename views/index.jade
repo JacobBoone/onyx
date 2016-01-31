@@ -41,21 +41,70 @@ block content
 											a(href='/aboutme') About Me
 									
 				//- image text large and small settings
-		.container.inspirational.hidden-xs
-			.col-md-1
-			.col-md-10
-				p.inspiration Our focus is on the full woman, full child and well-being of the family. 
-					span.text-muted From birth and beyond.
-			.col-md-1
-		.container.inspirational.visible-xs
-			.col-md-1
-			.col-md-10
-				p.inspiration-small Our focus is on the full woman, full child and well-being of the family. 
-					span.text-muted From birth and beyond.
-			.col-md-1
+				//- this was a section with the "slogan over a back ground which i have removed to try something new"
+		//- .container.inspirational.hidden-xs
+		//- 	.col-md-1
+		//- 	.col-md-10
+		//- 		p.inspiration Our focus is on the full woman, full child and well-being of the family. 
+		//- 			span.text-muted From birth and beyond.
+		//- 	.col-md-1
+		//- .container.inspirational.visible-xs
+		//- 	.col-md-1
+		//- 	.col-md-10
+		//- 		p.inspiration-small Our focus is on the full woman, full child and well-being of the family. 
+		//- 			span.text-muted From birth and beyond.
+		//- 	.col-md-1
+		#myCarousel.carousel.slide(data-ride='carousel')
+			//- // Indicators
+			ol.carousel-indicators
+				li.active(data-target='#myCarousel', data-slide-to='0')
+				li(data-target='#myCarousel', data-slide-to='1')
+				li(data-target='#myCarousel', data-slide-to='2')
+			.carousel-inner(role='listbox')
+				.item.active
+					img.first-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Birth')
+					.container.first-show
+						.carousel-caption
+							h1 Birth 
+								span.text-muted Naturally
+							p
+								| Note: If you're viewing this page via a 
+								code file://
+								|  URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+							p
+								a.btn.btn-lg.btn-primary(href='#', role='button') Learn More
+				.item
+					img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='psychk')
+					.container
+						.carousel-caption
+							h1 PSYCH-K
+							p
+								| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							p
+								a.btn.btn-lg.btn-primary(href='#', role='button') Learn More
+				.item
+					img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='essentialoils')
+					.container
+						.carousel-caption
+							h1 Essential Oils
+							p
+								| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							p
+								a.btn.btn-lg.btn-primary(href='#', role='button') Breathe
+			a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+				span.sr-only Previous
+			a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+				span.sr-only Next
+
+
+
 
 
 		.container.service-information
+
+
 			.row
 				.services-row.centered
 					a.service-links.service-links.col-xs-4.circle(href='#birth')
