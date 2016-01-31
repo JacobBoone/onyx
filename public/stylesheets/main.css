@@ -132,12 +132,22 @@ body{
 }
 
 .inspiration{
+	font-size: 40px;
+	color: gainsboro;
+	font-family: cursive;
+	padding-bottom: 10px;
+
+}
+
+
+.inspiration-small{
 	font-size: 30px;
 	color: gainsboro;
 	font-family: cursive;
-
 	/*position: absolute;*/
+	padding-bottom: 10px;
 }
+
 .carousel-caption{
 	padding-bottom: 80px;
 }
@@ -154,7 +164,7 @@ body{
 	margin-top: 100px;
 	position: absolute;
 }*/
-
+/*
 .inspiration-small{
 	font-size: 30px;
 	color: gainsboro;
@@ -163,7 +173,7 @@ body{
 	position: absolute;
 }
 
-
+*/
 .service-information{
 	background-color: lightgrey;
 	width: 100%;
