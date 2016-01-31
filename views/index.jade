@@ -60,10 +60,19 @@ block content
 				li.active(data-target='#myCarousel', data-slide-to='0')
 				li(data-target='#myCarousel', data-slide-to='1')
 				li(data-target='#myCarousel', data-slide-to='2')
+				li(data-target='#myCarousel', data-slide-to='3')
 			.carousel-inner(role='listbox')
 				.item.active
-					img.first-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Birth')
-					.container.first-show
+					img.first-slide(src='../../stylesheets/images/dandelion.jpg', alt='onyx')
+					.container
+						.carousel-caption
+							p.inspiration Our focus is on the full woman, full child and well-being of the family. 
+								span.text-muted From birth and beyond.
+
+
+				.item
+					img.second-slide(src='../../stylesheets/images/ocean.jpg', alt='Birth')
+					.container
 						.carousel-caption
 							h1 Birth 
 								span.text-muted Naturally
@@ -74,7 +83,7 @@ block content
 							p
 								a.btn.btn-lg.btn-primary(href='#', role='button') Learn More
 				.item
-					img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='psychk')
+					img.third-slide(src='../../stylesheets/images/butterfly.jpg', alt='psychk')
 					.container
 						.carousel-caption
 							h1 PSYCH-K
@@ -83,7 +92,7 @@ block content
 							p
 								a.btn.btn-lg.btn-primary(href='#', role='button') Learn More
 				.item
-					img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='essentialoils')
+					img.fourth-slide(src='../../stylesheets/images/lavender.jpg', alt='essentialoils')
 					.container
 						.carousel-caption
 							h1 Essential Oils
@@ -91,6 +100,7 @@ block content
 								| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							p
 								a.btn.btn-lg.btn-primary(href='#', role='button') Breathe
+			
 			a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
 				span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
 				span.sr-only Previous
