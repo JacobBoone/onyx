@@ -17,12 +17,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 //pages
 app.get('/', indexController.index);
 app.get('/contact', indexController.contact);
-app.get('/contactemail', indexController.contactemail);
-// app.get('/birth', indexController.birth);
-// app.get('/psychk', indexController.psychk);
-// app.get('/essentialoils', indexController.essentialoils);
 app.get('/aboutme', indexController.aboutme);
-app.get('/test', indexController.test);
+
 
 //contact form
 

@@ -24,50 +24,39 @@ block content
 								li
 									a.header-links(href='/') Home
 								li
-									a.header-links(href='/contact') Contact
+									a.header-links(href='/aboutme') About Me
+								li
+									a.header-links(href='mailto:onyxholisticservices@gmail.com?subject=Onyx Contant&body=Thank you so much for contacting Onyx. Please include your Full name, Phone Number, Email, and Reason for Contant. Have a Wonderful Day') Contact
 								li.dropdown(role="presentation")
 									a.header-links.dropdown-toggle(data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Services
 										span.caret
 									ul.dropdown-menu
 										li
-											a(href='/birth') Birth
+											a(href='/#birth') Natural Birth
 										li
-											a(href='/psychk') Psych K
+											a(href='/#psychk') PSYCH-K
 										li
-											a(href='/essentialoils') Essential Oils
-										li
-											a(href='/aboutme') About Me
-		
-		.container.service-information
-			.row.services-row
-				a.service-links.col-xs-3.circle(href='/birth')
-					.service-title
-						span Natural Birth
-					img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/earthmom.jpg')
-				a.service-links.col-xs-3(href='/psychk')
-					.service-title
-						span Psych K
-					img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/psychk.jpg')
-					
-				a.service-links.col-xs-3(href='/essentialoils')
-					.service-title
-						span Essential Oils
-					img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/essentialoils.jpg')
-					
-				a.service-links.col-xs-3(href='/aboutme')
-					.service-title
-						span About Me
-					img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/aboutme.jpg')
-			<hr class="featurette-divider">
-			.row.featurette.col-md-12
-				.col-md-9
-					h2.content-heading About Brittany
-					p.content "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-				.col-md-3
-					//- img.myphoto.img-responsive.center-block(src='../../stylesheets/images/aboutme.jpg')
+											a(href='/#essentialoils') Essential Oils
 
-			footer.footer
+
+
+		.container.service-information
+			.container.service-content.info
+				.row.featurette.col-md-12
+					.col-md-9
+						h2.content-heading About Brittany
+						p.content "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+					.col-md-3
+						img.myphoto.img-responsive.center-block(src='../../stylesheets/images/aboutme.jpg')
+
+
+				//- .container.actual-footer
+						.row-fluid.instagram
+							a.ig-b-.ig-b-48(href='https://www.instagram.com/onyxholisticservices/?ref=badge')
+								img(src='//badges.instagram.com/static/images/ig-badge-48.png', alt='Instagram')
+
+			//- footer.footer
 				.container
 					.row.instagram
-						a.ig-b-.ig-b-32(href='https://www.instagram.com/onyxholisticservices/?ref=badge')
-							img(src='//badges.instagram.com/static/images/ig-badge-32.png', alt='Instagram')
+						a.ig-b-.ig-b-48(href='https://www.instagram.com/onyxholisticservices/?ref=badge')
+							img(src='//badges.instagram.com/static/images/ig-badge-48.png', alt='Instagram')
