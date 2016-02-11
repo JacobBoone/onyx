@@ -71,7 +71,7 @@ body{
 
 
 .main-name{
-	margin-left: 160px;
+	margin-left: 95px;
 	display: inline-block;
 	margin-right: 0px;
 }
@@ -89,6 +89,11 @@ body{
 .navbar-default .navbar-nav>li>a>h3{
 	margin-top: -4px;
 }
+
+.navbar-toggle {
+    margin-right: 50px;
+}
+
 /*old background*/
 /*.hero{
 	background: url("images/seedsofhealing.jpg") no-repeat center center fixed;
