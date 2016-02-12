@@ -59,7 +59,14 @@ body{
     z-index: 1;
 }
 
+.anchor{
+	display: inline-block;
+	height: 180px; /*same height as header*/
+	margin-top: -180px; /*same height as header*/
+	visibility: hidden;
 
+ 	/*padding-bottom: 242px; */
+}
 
 
 /*change with Carousel*/
@@ -237,6 +244,10 @@ body{
 }
 
 
+/*.anchor{
+	margin-top: 100px;
+}*/
+
 .content{
 	font-size: 15px;
 	padding-left: 30px;
@@ -247,6 +258,7 @@ body{
 
 .content-heading{
 	font-size: 23px;
+	padding-left: 30px;
 }
 
 
