@@ -315,10 +315,17 @@ body{
 
 .instagram{
 	position: absolute;
-    right: 20%;
+    right: 16%;
 }
 
+.fb-icon{
+	margin-left: 15px;
+}
 
+.copyright{
+	margin-top: 35px;
+	font-size: 10px;
+}
 /*FOOTER ----------      END  ------------------*/
 
 
