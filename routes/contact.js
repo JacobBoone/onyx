@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 
 /* GET contact page. */
 router.get('/', function(req, res, next) {
-  res.render('contact', { title: 'Contact' });
+  res.render('contact', { title: 'Contact Onyx' });
 });
 
 
