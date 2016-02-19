@@ -1,100 +1,46 @@
 extends layout
 
 block content
-	.container.hero-contact
-		.navbar-wrapper
-			.container
-				header.navbar.navbar-default.navbar-fixed-top(role='navigation')
-					.container.site-title
-							.navbar-header
-									button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-										span.sr-only Toggle navigation
-										span.icon-bar
-										span.icon-bar
-										span.icon-bar
-						
-								
-								ul.nav.navbar-nav
-									li.main-name
-										a(href='/')
-											h1 Onyx
-											h3 Holistic Services
-						.navbar-collapse.collapse
-							ul.nav.navbar-nav.site-tabs
-								li
-									a.header-links(href='/') Home
-								li
-									a.header-links(href='/contact') Contact
-								li.dropdown(role="presentation")
-									a.header-links.dropdown-toggle(data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Services
-										span.caret
-									ul.dropdown-menu
-										li
-											a(href='/birth') Natural Birth
-										li
-											a(href='/psychk') Psych K
-										li
-											a(href='/essentialoils') Essential Oils
-										li
-											a(href='/aboutme') About Me
+	div.container
+		header
+			h1 #{title}
 
-
-
-
-
-		.container.panel.panel-default.contact-panel
-			.panel-heading
-				h3.panel-title Contact Me
-			.panel-body
-				form.form-horizontal(action='/contact', name='contactus', id='contactus', method='post')
-					.form-group
-						label.col-sm-2.control-label(for='name') Name
-						.col-sm-4
-							input.form-control(type='text', name='name', placeholder='Name', value='' id="name" required)
-
-					//- .form-group
-						label.col-sm-2.control-label(for='lastname') Last Name
-						.col-sm-4
-							input#inputLastname.form-control(type='text', placeholder='Last Name', required)
-
-					.form-group
-						label.col-sm-2.control-label(for='email') Email
-						.col-sm-4
-							input.form-control(type='email', name='email' placeholder='Email', value='' id='email',required)
-
-					//- .form-group
-						label.col-sm-2.control-label(for='phone') Phone Number
-						.col-sm-4
-							input.form-control(type='tel', name='phone', placeholder='Phone Number', id='phone',required)
-
-					//- .form-group
-						label.col-sm-2.control-label(for='serviceOptions') Reason for Inquiry
-						.col-sm-4
-								select.form-control(type='text', required)
-									//- is most likley a way to insert a loop for choices here
-									option Choose One
-									option Birth
-									option Breastfeeding
-									option Postpartum
-									option Psych K
-									option Essential Oils
-									option Other
-
-					.row
-						label.col-sm-2.control-label(for='message') Message
-						.col-sm-6
-							textarea.form-control(rows='8', name="message",id='message')
-
-					.form-group.contact-button
-						.col-sm-offset-2.col-sm-10
-							button.btn.btn-default(name='submit', type='submit', value='Send', id='submit') Submit
+		.row
+			.col-md-5
+				h2 Contact
+				form(action='contact/send', name='contact', id='contact', method='post')
+					div.form-group
+						label(for='name') Name:
+						input.form-control(name='name', type='text', placeholder='Name', id='name' required autofocus)
+					div.form-group
+						label(for='email') Email:
+						input.form-control(name='email', type='email', placeholder='Email', id='email' required)
+					div.form-group
+						label(for='reason') Category:
+						select.form-control(name='reason', type='text', id='reason' required)
+							option(disabled='', selected='true') Choose one
+							option Birth/ Childbirth Classes
+							option Postpartum/ Breastfeeding Support
+							option PSYCH-K
+							option Essential Oils
+							option Other
+					//- div.form-group
+						label(for='pack') Package of Interest:
+						select.form-control(name='pack', type='text', id='pack' required)
+							option(disabled='', selected='true') Choose one
+							option Mommy 
+							option Mother Baby 
+							option Holistic Well Being
+							option PSYCH-K
+							option Other
+					div.form-group
+						label(for='message') Message:
+						textarea.form-control(name='message', placeholder='Message' id='message')
+					div.form-group
+						input.btn.btn-primary.btn-sm(name='submit', type='submit', value='Submit', id='submit')
 
 					if(typeof msg !== 'undefined')
 						if(!!err)
-							div(class='msgbox err') #{msg}
+							p.err.bg-warning #{msg}
 						else
-							div(class='msgbox success') #{msg}
-
-
-
-
+							p.msgbox.success.bg-success #{msg}

@@ -3,9 +3,11 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 
 
-
-var indexController = require('./controllers/index.js');
-var contactController = require('./controllers/contact.js')
+var routes = require('./routes/index');
+var aboutme = require('./routes/aboutme');
+var contact = require('./routes/contact');
+// var indexController = require('./controllers/index.js');
+// var contactController = require('./controllers/contact.js')
 
 var app = express();
 app.set('view engine', 'jade');
@@ -15,12 +17,13 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 
 //pages
-app.get('/', indexController.index);
-app.get('/contact', indexController.contact);
-app.get('/aboutme', indexController.aboutme);
+app.use('/', routes);
+app.use('/aboutme', aboutme)
+app.use('/contact', contact);
 
-
-//contact form
+// app.get('/', indexController.index);
+// app.get('/contact', indexController.contact);
+// app.get('/aboutme', indexController.aboutme);
 
 
 
