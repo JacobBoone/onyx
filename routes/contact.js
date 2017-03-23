@@ -21,7 +21,7 @@ router.post('/send', function(req, res, next){
         from: '<onyxholisticservices@gmail.com>',
         to: 'onyxholisticservices@gmail.com',
         subject: 'Contact Form',
-        text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Reason for Contact: ' + req.body.reason + '\n' + 'Package of Interest: ' + req.body.pack + '\n' + req.body.message
+        text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Reason for Contact: ' + req.body.reason + '\n' + 'Phone Number: ' + req.body.callme  + '\n' + 'Message: ' + req.body.message
     };
 
     transporter.sendMail(mailOptions, function(error, info){
