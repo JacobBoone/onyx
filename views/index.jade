@@ -260,7 +260,7 @@ block content
 							p.content "Healing from invisible diseases is multi faceted, I am extremely grateful for Brittany and Psych-K. Without the release of stored emotions I believe that it is almost impossible to heal completely. Thank you for being a bright light and angel in my life, I can’t recommend Psyck-K enough." - Melissa W. Missouri, USA
 							p.content "Psych k with Brittany helped me amazingly to remember who I am and to feel in touch with myself again. I felt like I woke from a deep sleep and remembered who I am, what my purpose is, and what I truly want to achieve." -Miles Vracko, Switzerland 
 							p.content Psych-K is something I was slightly skeptical of at first. After looking into it more, I began to see how this form of energy work works, and thought I should give it a try. After being sexually abused as a child and later raped and also in an abusive relationship for many years, I was not emotionally ok and am still on a journey of healing. I wasn't someone who is very confident. When we began, confidence is what I chose to work on. A few days after Psyck-K with Brittany, I felt more awake, stood taller and was smiling and looking people in the eyes. Friends said I seemed different, and I do feel different. I felt lifted for sure! I highly recommend Pysch-K to anyone! -Nessa L, Pennsylvania, USA 
-					//- .row.featurett.col-md-12
+					//- .row.featurette.col-md-12
 						.col-md-12
 							.container
 								#tcb-testimonial-carousel.carousel.slide(data-ride='carousel')
@@ -273,14 +273,14 @@ block content
 										li(data-target='#tcb-testimonial-carousel', data-slide-to='2')
 										// Wrapper for slides
 									.carousel-inner
-										.item.active
+										.item.active.feedbackitem
 											.row
 												.col-xs-12
 													figure.clearfix
-														.col-md-2.col-sm-2.col-xs-12
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback
 															//- img.img-responsive.media-object(src='https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg')
 															|                                
-														.col-md-10.col-sm-10.col-xs-12.goodfeedback
+														.col-md-8.col-sm-8.col-xs-12.goodfeedback
 															figcaption.caption
 																p.text-brand.lead.no-margin "Healing from invisible diseases is multi faceted, I am extremely grateful for Brittany and Psych-K. Without the release of stored emotions I believe that it is almost impossible to heal completely. Thank you for being a bright light and angel in my life, I can’t recommend Psyck-K enough."
 																|                                         
@@ -289,35 +289,56 @@ block content
 																	//- | &nbsp;This is a testimonial window. Feedback of user can be displayed here.
 																|                                         
 																blockquote.no-margin
-																	p - Melissa W. Missouri, USA
+																	p.author - Melissa W. Missouri, USA
 																	|  
 																	//- small
 																		cite(title='Source Title')
 																			i.glyphicon.glyphicon-globe
 																			|  www.example1.com
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback					
 										|                 
-										.item
+										.item.feedbackitem
 											.row
 												.col-xs-12
 													figure.clearfix
-														.col-md-2.col-sm-2.col-xs-12
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback
 															//- img.img-responsive.media-object(src='https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg')
 														|                                
-														.col-md-10.col-sm-10.col-xs-12
+														.col-md-8.col-sm-8.col-xs-12.goodfeedback
 															figcaption.caption
-																p.text-brand.lead.no-margin I can&apos;t wait to test this out.
+																p.text-brand.lead.no-margin "Psych k with Brittany helped me amazingly to remember who I am and to feel in touch with myself again. I felt like I woke from a deep sleep and remembered who I am, what my purpose is, and what I truly want to achieve." 
 																|                                         
-																p
+																//- p
 																	span.glyphicon.glyphicon-thumbs-up
 																	| &nbsp;This is a testimonial window. Feedback of user can be displayed here.
 																|                                         
 																blockquote.no-margin
-																	p Someone Famous
+																	p.author -Miles Vracko, Switzerland 
 																	|  
-																	small
+																	//- small
 																		cite(title='Source Title')
 																			i.glyphicon.glyphicon-globe
 																			|  www.example1.com
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback						
+										.item.feedbackitem
+											.row
+												.col-xs-12
+													figure.clearfix
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback
+															//- img.img-responsive.media-object(src='https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg')
+														|                                
+														.col-md-8.col-sm-8.col-xs-12.goodfeedback
+															figcaption.caption
+																p.text-brand.lead.no-margin  "I wasn't someone who is very confident. When we began, confidence is what I chose to work on. A few days after Psyck-K with Brittany, I felt more awake, stood taller and was smiling and looking people in the eyes. Friends said I seemed different, and I do feel different. I felt lifted for sure! I highly recommend Pysch-K to anyone!" 
+																|                                         
+																//- p
+																	span.glyphicon.glyphicon-thumbs-up
+																	| &nbsp;This is a testimonial window. Feedback of user can be displayed here.
+																|                                         
+																blockquote.no-margin
+																	p.author -Nessa L, Pennsylvania, USA 
+																	|  
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback
 
 									// Controls
 									a.left.carousel-control(href='#tcb-testimonial-carousel', data-slide='prev')
@@ -325,8 +346,58 @@ block content
 									|             
 									a.right.carousel-control(href='#tcb-testimonial-carousel', data-slide='next')
 										span.glyphicon.glyphicon-chevron-right
-							
-
+					
+					//- .row.featurette.col-md-12
+						.col-md-12		
+							.container
+								.row
+									.col-md-12(data-wow-delay='0.2s')
+										#quote-carousel.carousel.slide(data-ride='carousel')
+											// Bottom Carousel Indicators
+											ol.carousel-indicators
+												li.active(data-target='#quote-carousel', data-slide-to='0')
+													img.img-responsive(src='https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg', alt='')
+												|                                 
+												li(data-target='#quote-carousel', data-slide-to='1')
+													img.img-responsive(src='https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg', alt='')
+												|                                 
+												li(data-target='#quote-carousel', data-slide-to='2')
+												img.img-responsive(src='https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg', alt='')
+											// Carousel Slides / Quotes
+											.carousel-inner.text-center
+												// Quote 1
+												.item.active
+													blockquote
+														.row
+														.col-sm-8.col-sm-offset-2
+															p
+																| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !
+															|                                                 
+															small Someone famous
+													// Quote 2
+												.item
+													blockquote
+														.row
+															.col-sm-8.col-sm-offset-2
+															p
+																| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+															|                                                 
+															small Someone famous
+												// Quote 3
+												.item
+													blockquote
+														.row
+															.col-sm-8.col-sm-offset-2
+															p
+																| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+															|                                                 
+															small Someone famous
+											// Carousel Buttons Next/Prev
+											a.left.carousel-control(data-slide='prev', href='#quote-carousel')
+												i.fa.fa-chevron-left
+											|                             
+											a.right.carousel-control(data-slide='next', href='#quote-carousel')
+												i.fa.fa-chevron-right
 			.container.oil-content.info
 					<hr class="featurette-divider">
 					span
@@ -346,8 +417,6 @@ block content
 								a(href='https://www.youngliving.com/vo/#/signup/new-start?sponsorid=2037746&enrollerid=2037746&type=member') Get Started!
 						.col-md-5
 							img.myphoto.img-responsive.center-block(src='../../stylesheets/images/essentialoils.jpg' data-holder-rendered="true")
-
-
 			.container.actual-footer
 					.row-fluid.instagram
 						a.ig-b-.ig-b-48(href='https://www.instagram.com/onyxholistic/?ref=badge')
