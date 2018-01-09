@@ -1,0 +1,438 @@
+extends layout
+
+block content
+	.container.hero
+		//- .navbar-wrapper
+			.container
+				nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+					.container.site-title
+							.navbar-header
+								button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse',aria-expanded="false", aria-controls="navbar")
+									span.sr-only Toggle navigation
+									span.icon-bar
+									span.icon-bar
+									span.icon-bar
+						
+								
+								ul.nav.navbar-nav
+									li.main-name
+										a(href='/')
+											h1 Onyx
+											h3 Holistic Services
+						.navbar-collapse.collapse.navbar-default
+							ul.nav.navbar-nav.site-tabs
+								li
+									a.header-links(href='/') Home
+								li
+									a.header-links(href='/aboutme') About
+								li
+									a.header-links(href='/contact') Contact
+								li.dropdown(role="presentation")
+									a.header-links.dropdown-toggle(data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Services
+										span.caret
+									ul.dropdown-menu
+										li
+											a(href='#birth') Natural Birth
+										li
+											a(href='#psychk') PSYCH-K
+										li
+											a(href='#essentialoils') Essential Oils
+										//- li
+											a(href='/aboutme') About Me
+									
+				//- image text large and small settings
+				//- this was a section with the "slogan over a back ground which i have removed to try something new"
+		//- .container.inspirational.hidden-xs
+		//- 	.col-md-1
+		//- 	.col-md-10
+		//- 		p.inspiration Our focus is on the full woman, full child and well-being of the family. 
+		//- 			span.text-muted From birth and beyond.
+		//- 	.col-md-1
+		//- .container.inspirational.visible-xs
+		//- 	.col-md-1
+		//- 	.col-md-10
+		//- 		p.inspiration-small Our focus is on the full woman, full child and well-being of the family. 
+		//- 			span.text-muted From birth and beyond.
+		//- 	.col-md-1
+		#myCarousel.carousel.slide(data-ride='carousel')
+			//- // Indicators
+			ol.carousel-indicators
+				li.active(data-target='#myCarousel', data-slide-to='0')
+				li(data-target='#myCarousel', data-slide-to='1')
+				li(data-target='#myCarousel', data-slide-to='2')
+				li(data-target='#myCarousel', data-slide-to='3')
+			.carousel-inner(role='listbox')
+				.item.active
+					img.first-slide(src='../../stylesheets/images/dandelion.jpg', alt='onyx')
+					.container
+						.carousel-caption
+							p.inspiration.hidden-xs You Can Heal
+							//- 	span.text-muted From birth and beyond.
+							//- p.inspiration-small.visible-xs Our focus is on the full woman, full child and well-being of the family. 
+							//- 	span.text-muted From birth and beyond.
+
+
+
+				//- .item
+				//- 	img.second-slide(src='../../stylesheets/images/ocean.jpg', alt='Birth')
+				//- 	.container
+				//- 		.carousel-caption
+				//- 			h1 Birth, 
+				//- 				span.text-muted Naturally.
+				//- 			p Are you expecting a new addition? Are you looking for Breastfeeding support? Whether its your first or you've had children we've got you covered. 
+				//- 			p
+				//- 				a.btn.btn-lg.btn-default(href='#birth', role='button') Learn More
+				.item
+					img.third-slide(src='../../stylesheets/images/butterfly.jpg', alt='psychk')
+					.container
+						.carousel-caption
+							h1 Energy Work
+							p A process that transcends the standard methods of visualization, affirmations, will power, and positive thinking especially effective in the areas of behavioral/habit change, wellness and stress reduction.
+							p
+								a.btn.btn-lg.btn-warning(href='#psychk', role='button') Free Your Mind
+				.item
+					img.fourth-slide(src='../../stylesheets/images/lavender.jpg', alt='essentialoils')
+					.container
+						.carousel-caption
+							h1 Essential Oils
+							p Essential Oils, the pure essence of health-promoting botanicals that can be diffused, inhaled, applied topically, incorporated into massage, or taken internally.
+							p
+								a.btn.btn-lg.btn-primary(href='#essentialoils', role='button') Enrich Your Life
+			
+			a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+				span.sr-only Previous
+			a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+				span.sr-only Next
+
+
+
+
+
+		.container.service-information
+
+
+			//- .row
+				.services-row.centered
+					a.service-links.service-links.col-xs-4.circle(href='#birth')
+						.service-title
+							span Birth
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/earthmom.jpg')
+					a.service-links.col-xs-4(href='#psychk')
+						.service-title
+							span PSYCH-K
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/psychk.jpg')
+					a.service-links.col-xs-4(href='#essentialoils')
+						.service-title
+							span Essential Oils
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/essentialoils.jpg')
+						
+					a.service-links.col-xs-3(href='/aboutme')
+						.service-title
+							span About Me
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/aboutme.jpg')
+
+			//- .row.visible-xs
+				.services-row.centered.visible-xs
+					a.service-links-small.service-links.col-xs-4.circle(href='#birth')
+						.service-title
+							span Birth
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/earthmom.jpg')
+					a.service-links-small.col-xs-4(href='#psychk')
+						.service-title
+							span PSYCH-K
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/psychk.jpg')
+					a.service-links-small.col-xs-4(href='#essentialoils')
+						.service-title
+							span Essential Oils
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/essentialoils.jpg')
+						
+					a.service-links-small.col-xs-3(href='/aboutme')
+						.service-title
+							span About Me
+						img.service-icon.img-responsive.img-circle(src='../../stylesheets/images/aboutme.jpg')
+
+
+
+					
+
+			.container.service-content.info
+				//- <hr class="featurette-divider">
+				.row.featurette.col-md-12
+					.col-md-12
+						h2.content.content-heading #{title}
+						p.content.content-subhead
+							
+						//- p.content.content-subhead
+							span.text-muted From birth and beyond
+						p.content Guiding individuals to be as healthy as possible mentally and physically.
+						//- p.content As a mother of two, who battled chronic illness for myself and my oldest son I understand how overwhelming health issues can be, especially as a mom. 
+						//- p.content Supporting couples to have the healthiest pregnancies possible, amazing births, and to embrace Parenthood fully with the wisdom and power each couple already has inside of them.
+						//- p.content Supporting individuals physical bodies by guiding each into healthy eating and self care.
+						p.content My goal is to help ones emotional, spiritual, and physical well being through gentle counseling, energy work, homeopathy, flower essences, aromatherapy, and crystals. 
+						p.content As an intuitive healer I take a holistic approach using different modalities to gently guide individuals into reaching their highest potentials.
+						p.content.text-muted Located in Hampstead, MD for in person appointments. Appointments also available by phone for non local individuals.
+
+
+
+
+
+
+			//- .container.service-content.info
+			//- 	<hr class="featurette-divider">
+			//- 	.row.featurette.col-md-12
+			//- 		.col-md-2
+			//- 		.col-md-8
+			//- 			h2.content.content-heading Consultations
+
+			//- 			p.content Consultations for are now being offered and are tailored to suit your needs. They can be conducted over the phone, Skype/ video conference, or in person, depending upon your situation.
+			//- 			h2.content 
+			//- 				u Sessions / Pricing
+			//- 			p.content First time customer (any session) - $25
+			//- 			p.content Breastfeeding/ Postpartum - $50
+			//- 			p.content Holistic Wellbeing (Essential Oils, Flower Essences) - $50 
+			//- 				span.text-muted (includes bio-impedenccc# scan for in person session)
+			//- 			P.content Emotional and Mental Wellbeing (PSYCH-K, Essential Oils, Flower Essences) - $50
+			//- 			p.content Bradley Birth Class - Contact for pricing and availablility
+
+			//- 		.col-md-2
+
+
+			//- .container.birth-content.info
+					<hr class="featurette-divider">
+					span
+						a(class="anchor" name="birth")
+					.row.featurette.col-md-12
+						.col-md-3
+							img.myphoto.img-responsive.center-block(src='../../stylesheets/images/ribbon.jpg' data-holder-rendered="true")
+						.col-md-9
+							h2.content-heading Birth, Naturally.
+							
+							p.content We offer counseling pre and post natal which includes, pregnancy classes, breastfeeding consultations and Energy sessions for mom and baby.
+							p.content I taught The Bradley Method<sup>&reg;</sup> for over five years before deciding to create tailored classes individualized to each couple. I also work as a holistic doula and breastfeeding counselor. 
+							p.content Classes are kept private and tailored to each couple based on their needs/wants. For more information about natural childbirth please 
+								a(href='/contact') Contact Me.
+
+
+							h2.content Postpartum
+							P.content We also offer postpartum counseling which includes, breastfeeding consultations and PSYCH-K sessions for mom and baby.
+
+			
+			.container.psychk-content.info
+					<hr class="featurette-divider">
+					span
+						a(class="anchor" name="psychk")
+					.row.featurette.col-md-12
+						.col-md-7
+							h2.content.content-heading Energy Work
+							//- p.content.content-subhead
+								span.text-muted From birth and beyond
+							p.content I offer several different forms of energy work based on the needs of the individual. I help get to the root of the issues so you can start feeling better quickly. I will also recommend and make specialized remedies specific to your needs and situation. I am certified in PSYCH-K<sup>&reg;</sup> and this will be the majority of your session, I will also use and teach other energy work so that you can continue your progress in between sessions. 
+							p.content PSYCH-K<sup>&reg;</sup> is a unique and direct way to change subconscious beliefs that perpetuate old habits of thinking and behaving that you would like to change. It is a simple process that helps you communicate with your subconscious mind so you can change beliefs that limit your self-esteem, relationships, job performance, and even your physical health. 
+							p.content Sessions are available remote and in-person, all welcome.
+							ul.content.list-content
+								li Experience abundance in every aspect of life
+								li Reduce stress and anxiety
+								li Develop relationships you desire and deserve
+								li Increase your sense of well being
+								li Release post-traumatic stress
+								li Re-perceive fears and phobias to feel at peace
+								li Eliminate destructive habits
+								li Accelerate spiritual development
+							p.content
+								a(href='/contact') Request 
+								| a session.
+							//- // 4:3 aspect ratio
+							//- .embed-responsive.embed-responsive-4by3
+							//- 	iframe.embed-responsive-item(src="https://www.youtube.com/embed/b4cV9cVa5sc" frameborder="0" allowfullscreen) 
+						//- .col-md-5	
+							img.myphoto.img-responsive.center-block(src='../../stylesheets/images/butterfly.jpg' data-holder-rendered="true")
+						.col-md-5
+							img.myphoto.img-responsive.center-block(src='../../stylesheets/images/butterfly.jpg' data-holder-rendered="true")
+							//- // 4:3 aspect ratio
+							//- .embed-responsive.embed-responsive-4by3
+								iframe.embed-responsive-item(src="https://www.youtube.com/embed/b4cV9cVa5sc" frameborder="0" allowfullscreen)
+							//- img.myphoto.img-responsive.center-block(src='../../stylesheets/images/psychk.jpg' data-holder-rendered="true")
+					.row.featurette.col-md-12
+						.col-md-12
+							h2.content.content-heading Testimonials
+							p.content "Healing from invisible diseases is multi faceted, I am extremely grateful for Brittany and Psych-K. Without the release of stored emotions I believe that it is almost impossible to heal completely. Thank you for being a bright light and angel in my life, I can’t recommend Psyck-K enough." - Melissa W. Missouri, USA
+							p.content "Psych k with Brittany helped me amazingly to remember who I am and to feel in touch with myself again. I felt like I woke from a deep sleep and remembered who I am, what my purpose is, and what I truly want to achieve." -Miles Vracko, Switzerland 
+							p.content Psych-K is something I was slightly skeptical of at first. After looking into it more, I began to see how this form of energy work works, and thought I should give it a try. After being sexually abused as a child and later raped and also in an abusive relationship for many years, I was not emotionally ok and am still on a journey of healing. I wasn't someone who is very confident. When we began, confidence is what I chose to work on. A few days after Psyck-K with Brittany, I felt more awake, stood taller and was smiling and looking people in the eyes. Friends said I seemed different, and I do feel different. I felt lifted for sure! I highly recommend Pysch-K to anyone! -Nessa L, Pennsylvania, USA 
+					//- .row.featurette.col-md-12
+						.col-md-12
+							.container
+								#tcb-testimonial-carousel.carousel.slide(data-ride='carousel')
+									// Indicators
+									ol.carousel-indicators
+										li.active(data-target='#tcb-testimonial-carousel', data-slide-to='0')
+										|                 
+										li(data-target='#tcb-testimonial-carousel', data-slide-to='1')
+										|                 
+										li(data-target='#tcb-testimonial-carousel', data-slide-to='2')
+										// Wrapper for slides
+									.carousel-inner
+										.item.active.feedbackitem
+											.row
+												.col-xs-12
+													figure.clearfix
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback
+															//- img.img-responsive.media-object(src='https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg')
+															|                                
+														.col-md-8.col-sm-8.col-xs-12.goodfeedback
+															figcaption.caption
+																p.text-brand.lead.no-margin "Healing from invisible diseases is multi faceted, I am extremely grateful for Brittany and Psych-K. Without the release of stored emotions I believe that it is almost impossible to heal completely. Thank you for being a bright light and angel in my life, I can’t recommend Psyck-K enough."
+																|                                         
+																//- p
+																	//- span.glyphicon.glyphicon-thumbs-up
+																	//- | &nbsp;This is a testimonial window. Feedback of user can be displayed here.
+																|                                         
+																blockquote.no-margin
+																	p.author - Melissa W. Missouri, USA
+																	|  
+																	//- small
+																		cite(title='Source Title')
+																			i.glyphicon.glyphicon-globe
+																			|  www.example1.com
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback					
+										|                 
+										.item.feedbackitem
+											.row
+												.col-xs-12
+													figure.clearfix
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback
+															//- img.img-responsive.media-object(src='https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg')
+														|                                
+														.col-md-8.col-sm-8.col-xs-12.goodfeedback
+															figcaption.caption
+																p.text-brand.lead.no-margin "Psych k with Brittany helped me amazingly to remember who I am and to feel in touch with myself again. I felt like I woke from a deep sleep and remembered who I am, what my purpose is, and what I truly want to achieve." 
+																|                                         
+																//- p
+																	span.glyphicon.glyphicon-thumbs-up
+																	| &nbsp;This is a testimonial window. Feedback of user can be displayed here.
+																|                                         
+																blockquote.no-margin
+																	p.author -Miles Vracko, Switzerland 
+																	|  
+																	//- small
+																		cite(title='Source Title')
+																			i.glyphicon.glyphicon-globe
+																			|  www.example1.com
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback						
+										.item.feedbackitem
+											.row
+												.col-xs-12
+													figure.clearfix
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback
+															//- img.img-responsive.media-object(src='https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg')
+														|                                
+														.col-md-8.col-sm-8.col-xs-12.goodfeedback
+															figcaption.caption
+																p.text-brand.lead.no-margin  "I wasn't someone who is very confident. When we began, confidence is what I chose to work on. A few days after Psyck-K with Brittany, I felt more awake, stood taller and was smiling and looking people in the eyes. Friends said I seemed different, and I do feel different. I felt lifted for sure! I highly recommend Pysch-K to anyone!" 
+																|                                         
+																//- p
+																	span.glyphicon.glyphicon-thumbs-up
+																	| &nbsp;This is a testimonial window. Feedback of user can be displayed here.
+																|                                         
+																blockquote.no-margin
+																	p.author -Nessa L, Pennsylvania, USA 
+																	|  
+														.col-md-2.col-sm-2.col-xs-12.goodfeedback
+
+									// Controls
+									a.left.carousel-control(href='#tcb-testimonial-carousel', data-slide='prev')
+										span.glyphicon.glyphicon-chevron-left
+									|             
+									a.right.carousel-control(href='#tcb-testimonial-carousel', data-slide='next')
+										span.glyphicon.glyphicon-chevron-right
+					
+					//- .row.featurette.col-md-12
+						.col-md-12		
+							.container
+								.row
+									.col-md-12(data-wow-delay='0.2s')
+										#quote-carousel.carousel.slide(data-ride='carousel')
+											// Bottom Carousel Indicators
+											ol.carousel-indicators
+												li.active(data-target='#quote-carousel', data-slide-to='0')
+													img.img-responsive(src='https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg', alt='')
+												|                                 
+												li(data-target='#quote-carousel', data-slide-to='1')
+													img.img-responsive(src='https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg', alt='')
+												|                                 
+												li(data-target='#quote-carousel', data-slide-to='2')
+												img.img-responsive(src='https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg', alt='')
+											// Carousel Slides / Quotes
+											.carousel-inner.text-center
+												// Quote 1
+												.item.active
+													blockquote
+														.row
+														.col-sm-8.col-sm-offset-2
+															p
+																| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !
+															|                                                 
+															small Someone famous
+													// Quote 2
+												.item
+													blockquote
+														.row
+															.col-sm-8.col-sm-offset-2
+															p
+																| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+															|                                                 
+															small Someone famous
+												// Quote 3
+												.item
+													blockquote
+														.row
+															.col-sm-8.col-sm-offset-2
+															p
+																| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+															|                                                 
+															small Someone famous
+											// Carousel Buttons Next/Prev
+											a.left.carousel-control(data-slide='prev', href='#quote-carousel')
+												i.fa.fa-chevron-left
+											|                             
+											a.right.carousel-control(data-slide='next', href='#quote-carousel')
+												i.fa.fa-chevron-right
+			.container.oil-content.info
+					<hr class="featurette-divider">
+					span
+						a(class="anchor" name="essentialoils")
+					.row.featurette.col-md-12
+						.col-md-7
+							h2.content.content-heading Essential oils
+							p.content Essential Oils have personally enhanced my life in so many ways. I am passionate about health and nutrition and am continuing my education in french aromatherapy. I would love to help guide you in learning more about Essential Oils and how they can benefit you and your family!
+							h3.content Benefits of Essential Oils
+							ul.content.list-content
+								li Inspire a positive emotional state
+								li Enhance your physical wellness
+								li Purify your home
+								li Refine your skin
+								li Create deep spiritual awareness
+							p.content
+								a(href='https://www.youngliving.com/vo/#/signup/new-start?sponsorid=2037746&enrollerid=2037746&type=member') Get Started!
+						.col-md-5
+							img.myphoto.img-responsive.center-block(src='../../stylesheets/images/essentialoils.jpg' data-holder-rendered="true")
+			.container.actual-footer
+					.row-fluid.instagram
+						a.ig-b-.ig-b-48(href='https://www.instagram.com/onyxholistic/?ref=badge')
+							img(src='//badges.instagram.com/static/images/ig-badge-48.png', alt='Instagram')
+						a.fb-icon(href='https://www.facebook.com/onyxholistic')
+							img(src='../../stylesheets/images/facebook_48.png')
+						a.tw-icon(href='https://twitter.com/onyxholistic')
+							img(src='../../stylesheets/images/twitter_48.png')
+						//- a.tw-icon(href='http://learningfromamaster.blogspot.com/?m=0')
+							img(src='../../stylesheets/images/blogger-48.png')
+					.row-fluid
+						p.text-muted.copyright.hidden-xs  &copy Copyright 2017, Onyx Holistic
+				
+			//- footer.footer
+			//- 	.container
+			//- 		.row-fluid.instagram
+			//- 			a.ig-b-.ig-b-32(href='https://www.instagram.com/onyxholisticservices/?ref=badge')
+			//- 				img(src='//badges.instagram.com/static/images/ig-badge-32.png', alt='Instagram')
+
