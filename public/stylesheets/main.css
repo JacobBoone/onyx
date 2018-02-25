@@ -313,8 +313,10 @@ body{
         margin: 0;
  }
 
-
+.subtext{
+	color: grey;
  /*NEW carousel use css from https://bootsnipp.com/snippets/featured/carousel-with-face-indicators  */
+}
 
 
 
