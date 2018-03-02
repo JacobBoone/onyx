@@ -20,7 +20,7 @@ router.post('/send', function(req, res, next){
     var mailOptions = {
         from: '<onyxholisticservices@gmail.com>',
         to: 'onyxholisticservices@gmail.com',
-        subject: 'Contact Form',
+        subject: 'New BLOVEHEALING Contact Form',
         text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Reason for Contact: ' + req.body.reason + '\n' + 'Phone Number: ' + req.body.callme  + '\n' + 'Message: ' + req.body.message
     };
 
